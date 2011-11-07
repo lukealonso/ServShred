@@ -93,7 +93,7 @@ function handleRequest(request, response) {
 
 function startup() {
 	var httpServer = sol.node.http.createServer(handleRequest);
-	httpServer.listen(8080, "192.168.1.112");
+	httpServer.listen(80, "127.0.0.1");
 }
 
 startup();
