@@ -4,13 +4,11 @@ sol.node = { };
 sol.node.sys = require("sys");
 sol.node.fs = require("fs");
 sol.node.http = require("http");
-sol.node.https = require("https");
 sol.node.path = require("path");
 sol.node.url = require("url");
 sol.node.querystring = require("querystring");
 sol.node.buffer = require("buffer");
 sol.node.net = require("net");
-sol.node.child_process = require("child_process");
 
 var _endPoints = { };
 var _shreds = { };
