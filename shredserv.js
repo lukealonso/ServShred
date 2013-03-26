@@ -52,7 +52,8 @@ function handleSyncShreds(request, response) {
 						responseStr += 'index="' + shred.index + '" ';
 						responseStr += 'x="' + shred.x + '" ';
 						responseStr += 'y="' + shred.y + '" ';
-						responseStr += 'angle="' + shred.angle + '"';
+						responseStr += 'angle="' + shred.angle + '" ';
+						responseStr += 'linePositions="' + shred.linePositions + '"';
 						responseStr += '/>';
 						responseCount++;
 					}
@@ -91,7 +92,7 @@ function handleRequest(request, response) {
 
 function startup() {
 	var httpServer = sol.node.http.createServer(handleRequest);
-	httpServer.listen(80, "127.0.0.1");
+	httpServer.listen(80, process.argv[2]);
 }
 
 startup();
